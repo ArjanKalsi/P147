@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #bce7ff">
+      <!--Sky-->
+      <a-sky src="https://images.unsplash.com/photo-1490735891913-40897cdaafd1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwc2t5fGVufDB8fDB8fHww"></a-sky>
+
+      <!--Floor-->
+      <a-plane
+        src="https://www.textures.com/system/gallery/photos/Wood/Planks/Old%20Planks/119378/WoodPlanksOld0244_2_350.jpg"
+        color="brown"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="4"
+        height="10"
+      ></a-plane>
+
+      <!--Wall-->
+      <a-plane
+        color="khaki"
+        src="https://i.pinimg.com/originals/22/cd/76/22cd76da45c34cffee67dbca770e62b5.png"
+        position="0 0 -4"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+      ></a-plane>
+
+      <!--Table-->
+      <a-cylinder
+        id="table-stand"
+        position="0 0 -3"
+        radius="0.2"
+        color="maroon"
+      ></a-cylinder>
+      <a-box
+        id="table-top"
+        position="0 0.6 -3"
+        color="darkred"
+        width="1.5"
+        height="0.075"
+      ></a-box>
+
+      <!--Chairs-->
+      <a-box
+        position="-1 0 -3"
+        color="darkorange"
+        height="0.7"
+        width="0.4"
+        depth="0.4"
+      ></a-box>
+      <a-box
+        position="-1.2 0 -3"
+        color="yellow"
+        height="1.5"
+        width="0.05"
+        depth="0.4"
+      ></a-box>
+
+      <a-box
+        position="1 0 -3"
+        color="darkorange"
+        height="0.7"
+        width="0.4"
+        depth="0.4"
+      ></a-box>
+      <a-box
+        position="1.2 0 -3"
+        color="yellow"
+        height="1.5"
+        width="0.05"
+        depth="0.4"
+      ></a-box>
+
+      <!--Light-->
+      <a-cylinder
+        position="0 4 -3"
+        color="violet"
+        radius="0.05"
+        height="3"
+      ></a-cylinder>
+      <a-cone
+        position="0 2.25 -3"
+        color="violet"
+        height="0.6"
+        radius-bottom="0.4"
+      ></a-cone>
+      <a-sphere
+        position="0 2 -3"
+        radius="0.225"
+      ></a-sphere>
+</body>
+
+</html>
